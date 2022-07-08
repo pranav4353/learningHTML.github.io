@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Pranav Panwar">
     <meta name="description" content="Learning HTML by building a simple website">
-    <meta name="keywords" content="boilerplate, starter code, HTML, learning">
+    <meta name="keywords" content="boilerplate, starter code, HTML, learning, flexbox">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
@@ -22,26 +22,71 @@
     <!-- Already specified in the charset above-->
 
     <title>Flex-box Page</title>
+ 
+    <style>
+        div {border: thin line black}
+        * {box-sizing: border-box;}
+        .header {
+            border: 1px solid red;
+            padding: 15 px;
+        }
+        .menu {
+            width: 25%;
+            float: left;
+            padding: 15px;
+            border: 1px solid red;
+        }
+        .main {
+            float: left;
+            width: 50%;
+            padding: 15px;
+            border: 1px solid red;
+        }
+        .aside {
+            float: left; 
+            width: 25%;
+            padding: 15px;
+            border: 1px solid red;
+        }
+        .footer {
+            padding: 15pxborder;
+            border: 1px solid red;
+        }
+    </style>
 
+    <!-- warning about JavaScript, Cybersecuriety topic -->
     <noscript>Running JavaScript is not nessary in this HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
 
 </head>
 
 <body>
-    <header>This is the Flex-box Page</header>
-    <nav>Navigation</nav>
-    <aside>This is the aside space.</aside>
-    <section><article>This is a section and article</article></section>
-    <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
+    <div class="header"><header>This is the Flex-box Page</header></div>
+    <div class="menu"><nav>Navigation</nav></div>
+    <div class="main">
+        <section><article>This is a section and article</article></section>
+        <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
+    </div>
+    <div class="aside">
+            <aside>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+                                This is the aside space.
+            </aside>
+    </div>  
 </body>
 
 <footer>
+    <div class="footer">
     <blockquote cite="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed">
         <!-- Date Accessed 20220706 -->
     </blockquote>
     <strong>"Aim low and you won't be disappointed" - </strong>
     <em><a href="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed" target="_blank">Chuck Palahniuk</a></em>
     <p>&copy Pranav Panwar, powered by pranav4353 in GitHub</p>
+    </div>
 </footer>
 
 
