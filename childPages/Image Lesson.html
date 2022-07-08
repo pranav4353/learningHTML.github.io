@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Pranav Panwar">
     <meta name="description" content="Learning HTML by building a simple website">
-    <meta name="keywords" content="boilerplate, starter code, HTML, learning">
+    <meta name="keywords" content="boilerplate, starter code, HTML, learning, images">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <!-- Content give value for name or http-equiv attribute, text entry in string or array string -->
 
@@ -22,7 +22,8 @@
     <!-- Already specified in the charset above-->
 
     <title>Image Lesson Page</title>
-
+    
+    <!-- warning about JavaScript, Cybersecuriety topic -->
     <noscript>Running JavaScript is not nessary in this HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
 
 </head>
@@ -30,9 +31,36 @@
 <body>
     <header>This is the Image Lesson Page</header>
     <nav>Navigation</nav>
-    <aside>This is the aside space.</aside>
-    <section><article>This is a section and article</article></section>
-    <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
+    <aside>Students are to play with h-tags, p-tags, a-tags, etc,in the viewport with inline style settings.</aside>
+    <section>
+        <header>Steps in building an Image</header>
+        <ul>
+            <li> Pick an Image (careful of the file extension in the URL)
+            <li> Record the URL, cite it, comment for the date accessed, and record the origonal dimensions (i.e aspect ratio)
+            <li> Note: openning in a new tab will eventually provide a http or https URL with a file extension
+            <li> Use blockquote and comment as appropirate
+            <li> Use img-tag with attributes src, alt, title, and style with width-height
+            <li> Compare the same image with two sizes of the viewport (25% & 100%)
+        </ul>
+    </section>
+
+    <section>
+        <header>Example Image,25% of the screen, sourced outside computer</header>
+        <blockquote cite="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg">
+            <!-- Date accessed 20220708 -->
+            <!-- Width:1300, Height:1390 -->
+        </blockquote>
+        <Img src="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg" alt="../Images/water-splash-12429612" title="splash, pranav" style="width:25%;height:auto;">
+    </section>
+
+    <section>
+        <header>Example Image,100% of the screen, sourced inside computer</header>
+        <blockquote cite="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg">
+            <!-- Date accessed 20220708 -->
+            <!-- Width:1300, Height:1390 -->
+        </blockquote>
+        <Img src="../Images/water-splash-12429612.jpg" alt="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg" title="splash, pranav" style="width:100%;height:auto;">
+    </section>
 </body>
 
 <footer>
