@@ -27,7 +27,7 @@
         div {border: thin line black}
         * {box-sizing: border-box;}
         .header {
-            border: 1px solid red;
+            border: 1px solid ;
             padding: 15 px;
             text-align: center;
             background-color: #32758B;
@@ -36,18 +36,23 @@
             float: left;
             width: 66%;
             padding: 15px;
-            border: 1px solid red;
+            border: 1px solid transparent;
             text-align: center;
         }
         .aside {
             float: left; 
             width: 34%;
             padding: 15px;
-            border: 1px solid red;
+            border: 1px solid transparent;
         }
         .footer {
             padding: 15px;
-            border: 1px solid red;
+            border: 1px solid ;
+            position: fixed;
+            bottom: 0;
+            width: 99%;
+            background-color: #32758B;
+            color: #fcfcfc;
         }
         .menu {
             background-color: #32758B;
@@ -73,6 +78,7 @@
 </head>
 
 <body>
+    <a href="../index.html">Home</a>
     <div class="header"><header><h1 style="color: #fcfcfc;">This is the Flex-box Page</h1></header></div>
     <div class="menu">
     <a href="../childPages/childTemplate.html">Child Template</a>

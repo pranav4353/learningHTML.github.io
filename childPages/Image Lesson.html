@@ -23,17 +23,103 @@
 
     <title>Image Lesson Page</title>
     
+    <style>
+        div {border: thin line black}
+        * {box-sizing: border-box;}
+        .header {
+            border: 1px solid ;
+            padding: 15 px;
+            text-align: center;
+            background-color: #32758B;
+        }
+        .main {
+            float: left;
+            width: 66%;
+            padding: 15px;
+            border: 1px solid transparent;
+            text-align: center;
+        }
+        .aside {
+            float: left; 
+            width: 34%;
+            padding: 15px;
+            border: 1px solid transparent;
+        }
+        .footer {
+            padding: 15px;
+            border: 1px solid ;
+            position: fixed;
+            bottom: 0;
+            width: 99%;
+            background-color: #32758B;
+            color: #fcfcfc;
+        }
+        .menu {
+            background-color: #32758B;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: #fcfcfc;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 253, 253, 0.119);
+            color: white;
+        }        
+    </style>
+
     <!-- warning about JavaScript, Cybersecuriety topic -->
     <noscript>Running JavaScript is not nessary in this HTML Page ... FYI: your feature to execute scripts is turned off</noscript>
 
 </head>
 
+
 <body>
-    <header>This is the Image Lesson Page</header>
-    <nav>Navigation</nav>
-    <aside>Students are to play with h-tags, p-tags, a-tags, etc,in the viewport with inline style settings.</aside>
-    <section>
-        <header>Steps in building an Image</header>
+    <a href="../index.html">Home</a>
+    <div class="header"><header><h1 style="color: #fcfcfc;">This is the Image Lesson Page</h1></header></div>
+    <div class="menu">
+    <a href="../childPages/childTemplate.html">Child Template</a>
+    <a href="../childPages/Flex-box.html">Flex-box</a>
+    <a href="../childPages/Headings and Paragraph Tags no Viewport.html">Headings & Paragraphs w/o viewport</a>
+    <a href="../childPages/Headings and Paragraph Tags with Viewport.html">Headings & Paragraphs w/ viewport</a>
+    <a href="../childPages/Image Lesson.html">Image Lesson</a>
+    <a href="../childPages/index with divs.html">Index w/ Divs</a>
+    <a href="../childPages/Laying out DIVs.html">Laying out Divs</a>
+    <a href="../childPages/Subscriph and Superscript Tags.html">Sub & Super Tags</a>
+    </div>
+    <div class="main">
+        <section>
+            <header>Example Image,25% of the Div, sourced outside computer</header>
+            <blockquote cite="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg">
+                <!-- Date accessed 20220708 -->
+                <!-- Width:1300, Height:1390 -->
+            </blockquote>
+            <Img src="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg" alt="../Images/water-splash-12429612" title="splash, pranav" style="width:25%;height:auto;">
+        </section>
+        <section>
+            <header>Example Image,100% of the Div, sourced inside computer</header>
+            <blockquote cite="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg">
+                <!-- Date accessed 20220708 -->
+                <!-- Width:1300, Height:1390 -->
+            </blockquote>
+            <Img src="../Images/water-splash-12429612.jpg" alt="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg" title="splash, pranav" style="width:100%;height:auto;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+            </section>
+        
+    </div>
+    <div class="aside">
+        <aside>Students are to play with h-tags, p-tags, a-tags, etc,in the viewport with inline style settings.</aside>
+        <header><h2>Steps in building an Image</h2></header>
         <ul>
             <li> Pick an Image (careful of the file extension in the URL)
             <li> Record the URL, cite it, comment for the date accessed, and record the origonal dimensions (i.e aspect ratio)
@@ -43,34 +129,19 @@
             <li> Compare the same image with two sizes of the viewport (25% & 100%)
         </ul>
     </section>
-
-    <section>
-        <header>Example Image,25% of the screen, sourced outside computer</header>
-        <blockquote cite="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg">
-            <!-- Date accessed 20220708 -->
-            <!-- Width:1300, Height:1390 -->
-        </blockquote>
-        <Img src="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg" alt="../Images/water-splash-12429612" title="splash, pranav" style="width:25%;height:auto;">
-    </section>
-
-    <section>
-        <header>Example Image,100% of the screen, sourced inside computer</header>
-        <blockquote cite="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg">
-            <!-- Date accessed 20220708 -->
-            <!-- Width:1300, Height:1390 -->
-        </blockquote>
-        <Img src="../Images/water-splash-12429612.jpg" alt="https://thumbs.dreamstime.com/z/water-splash-12429612.jpg" title="splash, pranav" style="width:100%;height:auto;">
-    </section>
+    </div>  
 </body>
 
 <footer>
+    
+    <div class="footer">
+    <hr>
     <blockquote cite="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed">
         <!-- Date Accessed 20220706 -->
     </blockquote>
     <strong>"Aim low and you won't be disappointed" - </strong>
     <em><a href="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed" target="_blank">Chuck Palahniuk</a></em>
-    <p>&copy Pranav Panwar, powered by pranav4353 in GitHub</p>
+    <p><h5>&copy Pranav Panwar, powered by pranav4353 in GitHub</h5></p>
+    </div>
 </footer>
-
-
 </html>

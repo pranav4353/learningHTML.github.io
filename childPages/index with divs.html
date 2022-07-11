@@ -24,6 +24,52 @@
     <title>Splash Page with divs</title>
 
     <style>
+        div {border: thin line black}
+        * {box-sizing: border-box;}
+        .header {
+            border: 1px solid ;
+            padding: 15 px;
+            text-align: center;
+            background-color: #32758B;
+        }
+        .main {
+            float: left;
+            width: 66%;
+            padding: 15px;
+            border: 1px solid transparent;
+            text-align: left;
+        }
+        .aside {
+            float: left; 
+            width: 34%;
+            padding: 15px;
+            border: 1px solid transparent;
+        }
+        .footer {
+            padding: 15px;
+            border: 1px solid ;
+            position: fixed;
+            bottom: 0;
+            width: 99%;
+            background-color: #32758B;
+            color: #fcfcfc;
+        }
+        .menu {
+            background-color: #32758B;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: #fcfcfc;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 253, 253, 0.119);
+            color: white;
+        }
         /* This is a style comment */
         /* // ignores the line in style */
         //div {border: thin dotted rgb(10, 126, 126);}
@@ -35,10 +81,19 @@
 </head>
 
 <body>
-    <div><header>Website to learn HTML</header></div>
-
-    <Div><nav>
-        <header>Navigation</header>
+    <a href="../index.html">Home</a>
+    <div class="header"><header><h1 style="color: #fcfcfc;">This is the Index w/ Divs Page</h1></header></div>
+    <div class="menu">
+    <a href="../childPages/childTemplate.html">Child Template</a>
+    <a href="../childPages/Flex-box.html">Flex-box</a>
+    <a href="../childPages/Headings and Paragraph Tags no Viewport.html">Headings & Paragraphs w/o viewport</a>
+    <a href="../childPages/Headings and Paragraph Tags with Viewport.html">Headings & Paragraphs w/ viewport</a>
+    <a href="../childPages/Image Lesson.html">Image Lesson</a>
+    <a href="../childPages/index with divs.html">Index w/ Divs</a>
+    <a href="../childPages/Laying out DIVs.html">Laying out Divs</a>
+    <a href="../childPages/Subscriph and Superscript Tags.html">Sub & Super Tags</a>
+    </div>
+    <div class="main">
         <section>
             <ul>
                 <li>This is a child template page with example meta data, <a href="" target="_blank">click here, when avaliable</a>
@@ -50,25 +105,30 @@
                 <li>This is a Subscriph and Superscript Tags Page, <a href="" target="_blank">click here, when avaliable</a>
             </ul>
         </section>
-    </nav></Div>
-    <div><aside>This is the aside space.</aside></div>
-    
-    <div><section><article>This is a section and article</article></section></div>
-   
-    <div><section><article><p>This is a paragraph tag inside a section-article</p></article></section></div>
-
+        <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
+    </div>
+    <div class="aside">
+            <aside>
+                <br>
+                    <br>
+                        <br>
+                            <br>
+                                <br>
+                                    <h3>This is the aside space.</h3>
+            </aside>
+    </div>  
 </body>
 
 <footer>
-    <div>
-        <blockquote cite="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed">
+    
+    <div class="footer">
+    <hr>
+    <blockquote cite="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed">
         <!-- Date Accessed 20220706 -->
-        </blockquote>
-        <strong>"Aim low and you won't be disappointed" - </strong>
-        <em><a href="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed" target="_blank">Chuck Palahniuk</a></em>
-        <p>&copy Pranav Panwar, powered by pranav4353 in GitHub</p>
+    </blockquote>
+    <strong>"Aim low and you won't be disappointed" - </strong>
+    <em><a href="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed" target="_blank">Chuck Palahniuk</a></em>
+    <p><h5>&copy Pranav Panwar, powered by pranav4353 in GitHub</h5></p>
     </div>
 </footer>
-
-
 </html>
