@@ -29,29 +29,42 @@
         .header {
             border: 1px solid red;
             padding: 15 px;
-        }
-        .menu {
-            width: 25%;
-            float: left;
-            padding: 15px;
-            border: 1px solid red;
+            text-align: center;
+            background-color: #32758B;
         }
         .main {
             float: left;
-            width: 50%;
+            width: 66%;
             padding: 15px;
             border: 1px solid red;
+            text-align: center;
         }
         .aside {
             float: left; 
-            width: 25%;
+            width: 34%;
             padding: 15px;
             border: 1px solid red;
         }
         .footer {
-            padding: 15pxborder;
+            padding: 15px;
             border: 1px solid red;
         }
+        .menu {
+            background-color: #32758B;
+            overflow: hidden;
+        }
+        .menu a {
+            float: left;
+            display: block;
+            color: #fcfcfc;
+            text-align: center;
+            padding: 15px;
+            text-decoration: none;
+        }
+        .menu a:hover {
+            background-color: rgba(255, 253, 253, 0.119);
+            color: white;
+        }        
     </style>
 
     <!-- warning about JavaScript, Cybersecuriety topic -->
@@ -60,10 +73,19 @@
 </head>
 
 <body>
-    <div class="header"><header>This is the Flex-box Page</header></div>
-    <div class="menu"><nav>Navigation</nav></div>
+    <div class="header"><header><h1 style="color: #fcfcfc;">This is the Flex-box Page</h1></header></div>
+    <div class="menu">
+    <a href="../childPages/childTemplate.html">Child Template</a>
+    <a href="../childPages/Flex-box.html">Flex-box</a>
+    <a href="../childPages/Headings and Paragraph Tags no Viewport.html">Headings & Paragraphs w/o viewport</a>
+    <a href="../childPages/Headings and Paragraph Tags with Viewport.html">Headings & Paragraphs w/ viewport</a>
+    <a href="../childPages/Image Lesson.html">Image Lesson</a>
+    <a href="../childPages/index with divs.html">Index w/ Divs</a>
+    <a href="../childPages/Laying out DIVs.html">Laying out Divs</a>
+    <a href="../childPages/Subscriph and Superscript Tags.html">Sub & Super Tags</a>
+    </div>
     <div class="main">
-        <section><article>This is a section and article</article></section>
+        <section><article><h3>This is a section and article</h3></article></section>
         <section><article><p>This is a paragraph tag inside a section-article</p></article></section>
     </div>
     <div class="aside">
@@ -73,19 +95,21 @@
                         <br>
                             <br>
                                 <br>
-                                This is the aside space.
+                                    <h3>This is the aside space.</h3>
             </aside>
     </div>  
 </body>
 
 <footer>
+    
     <div class="footer">
+    <hr>
     <blockquote cite="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed">
         <!-- Date Accessed 20220706 -->
     </blockquote>
     <strong>"Aim low and you won't be disappointed" - </strong>
     <em><a href="https://www.goodreads.com/quotes/7144754-aim-low-and-you-won-t-be-disappointed" target="_blank">Chuck Palahniuk</a></em>
-    <p>&copy Pranav Panwar, powered by pranav4353 in GitHub</p>
+    <p><h5>&copy Pranav Panwar, powered by pranav4353 in GitHub</h5></p>
     </div>
 </footer>
 
